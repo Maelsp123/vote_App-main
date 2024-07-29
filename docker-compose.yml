@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  php:
+    build: ./php
+    ports:
+      - "8081:80"
+    depends_on:
+      - postgres
+  node:
+    build: ./node
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: votes
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  postgres-data:

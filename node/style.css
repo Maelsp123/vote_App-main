@@ -1,0 +1,60 @@
+body {
+    background: url('image_vote.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #bad6f4;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+body {
+    background-color: transparent;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #b3d5f9;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
